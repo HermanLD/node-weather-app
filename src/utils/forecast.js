@@ -12,11 +12,9 @@ const forecast = (latitude, longitude, callback) => {
       const currWeather = body.current;
       callback(
         undefined,
-        `
-      It is ${currWeather.temperature} degrees out but, it feels like ${
+        `It is ${currWeather.temperature} degrees out but, it feels like ${
           currWeather.feelslike
-        } degrees with ${currWeather.precip * 100}% chance of rain.
-      `
+        } degrees with ${currWeather.precip * 100}% chance of rain.`
       );
     }
     // body.current.temperature
